@@ -114,3 +114,4 @@ After deploy, open your service URL.
 - Posters not showing:
   - verify `TMDB_API_KEY` in `backend/.env`
   - with blocked network, use VPN or keep fallback mode (`LIVE_POSTER_FETCH=0`)
+<img width="1919" height="924" alt="image" src="https://github.com/user-attachments/assets/ef4f21f0-efeb-496d-91b5-3337d20bdef0" />
