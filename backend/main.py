@@ -13,6 +13,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
+movies = pickle.load(open("backend/movies.pkl", "rb"))
+
+similarity = None
+if os.path.exists("backend/similarity.pkl"):
+    similarity = pickle.load(open("backend/similarity.pkl", "rb"))
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ENV_FILE = os.path.join(HERE, ".env")
 
